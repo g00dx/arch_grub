@@ -1,0 +1,70 @@
+# arch grub theme                                                          g00d
+#                                                                      07192016
+#;=============================================================================
+
+title-text:                                       ""
+desktop-color:                                    "#282828"
+terminal-box:                                     "terminal_box_*.png"
+terminal-font:                                    "Anonymous Pro Regular 14"
+
++ image {
+    file =                                        arch_l_600.png
+    left =                                        50%-275
+    top =                                         0
+    width =                                       0
+    height =                                      0
+
+}
+
++ boot_menu {
+    left =                                        50%-170
+    top =                                         55%
+    width =                                       20%
+    height =                                      35%
+
+    item_font =                                   "Inconsolata Bold 144"
+    item_color =                                  "#928374"
+    item_height =                                 11
+    item_icon_space =                             6
+    item_spacing =                                10
+
+    selected_item_font =                          "Inconsolata Bold 14"
+    selected_item_color=                          "#ebdbb2"
+    selected_item_pixmap_style =                  "select_*.png"
+
+    icon_height =                                 32
+    icon_width =                                  32
+
+    scrollbar =                                   false
+    scrollbar_width =                             20
+    scrollbar_thumb =                             "slider_*.png"
+}
+
++ progress_bar {
+    left =                                        50%-70
+    top =                                         50%-10
+    width =                                       12
+    height =                                      12
+
+    id =                                          "__timeout__"
+    text =                                        "@TIMEOUT_NOTIFICATION_MIDDLE@"
+    font =                                        "DejaVu Sans Regular 12"
+    text_color =                                  "#fbf1c7"
+    align =                                       "center"
+    bar_style =                                   "*"
+    highlight_style =                             "*"
+}
+
++ hbox {
+	top = 100%-27
+	left = 50%-295
+	+ label {text = "(up/down): "		               font = "DejaVu Sans Regular 12" color = "#fbf1c7" align = "center"}
+	+ label {text = "navigate options      "       font = "DejaVu Sans Regular 12" color = "#fbf1c7" align = "center"}
+	+ label {text = "(Enter): "                    font = "DejaVu Sans Regular 12" color = "#fbf1c7" align = "center"}
+	+ label {text = "boot selected       "         font = "DejaVu Sans Regular 12" color = "#fbf1c7" align = "center"}
+	+ label {text = "(E): "                        font = "DejaVu Sans Regular 12" color = "#fbf1c7" align = "center"}
+	+ label {text = "edit selected       "         font = "DejaVu Sans Regular 12" color = "#fbf1c7" align = "center"}
+	+ label {text = "(C): "                        font = "DejaVu Sans Regular 12" color = "#fbf1c7" align = "center"}
+	+ label {text = "grub cli"                     font = "DejaVu Sans Regular 12" color = "#fbf1c7" align = "center"}
+
+}
